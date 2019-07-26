@@ -1,0 +1,193 @@
+//- 導航條
+nav.navbar.navbar-expand-md.navbar-light.fixed-top.border.border-white.bg-light
+    .container
+      a.navbar-brand(href='#header') HOME
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
+        i.fas.fa-bars
+        //- span.navbar-toggler-icon
+      #navbarText.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.activew.mr-2
+            a.nav-link(href='#about')
+              | About
+              span.sr-only (current)
+          li.nav-item.mr-2
+            a.nav-link(href='#resume') Resume
+          li.nav-item.mr-2
+            a.nav-link(href='#skill') Skill
+          li.nav-item.mr-2
+            a.nav-link(href='#work') Work
+          li.nav-item.mr-2
+            a.nav-link(href='#contact') Contact 
+//- 首頁
+header#header
+  .container
+     h1 Hello! I'm Leo
+     .social
+      a(href="https://www.facebook.com/profile.php?id=100002498349630" target="_blank").fb
+        i.fab.fa-facebook-f
+      a(href="https://www.instagram.com/bjmqfg83/?hl=zh-tw" target="_blank").ig
+        i.fab.fa-instagram
+      a(href="https://github.com/bjmqfg83" target="_blank").github
+        i.fab.fa-github
+     .mousedown
+        .mouse.d-none.d-md-block
+          .wheel
+section#about
+  h2 About Me
+  hr
+  .personal_msg.container
+    .row
+      #avatar.carousel.slide.carousel-fade.col-md-6.col-sm-12(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#avatar', data-slide-to='0')
+            div
+          li(data-target='#avatar', data-slide-to='1')
+            div
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='https://upload.cc/i1/2019/07/10/FVzoSk.jpg', alt='mypic1')
+          .carousel-item
+            img.d-block.w-100(src='https://upload.cc/i1/2019/07/09/BIe5wP.jpg', alt='mypic2')
+      .introduction.col-md-6.col-sm-12
+        p 我是林禹勝 (Leo)，今年24歲，來自新北市。
+        p Cum amet alias aperiam quidem ab accusamus accusantium ut quasi adipisci magni repellendus quos consectetur mollitia nam nihil, tenetur, deserunt exercitationem? Quod velit laborum aut a est accusantium, perferendis quisquam.
+        p Doloremque facere fugiat vel quis obcaecati consectetur molestiae. Suscipit exercitationem recusandae modi. Minima, alias ex. Repudiandae voluptatum, non possimus facilis recusandae, maiores harum eaque veritatis tenetur delectus fugiat necessitatibus vero?
+        p Dolores dolor optio consectetur doloribus ex quaerat voluptatum! Nemo, voluptas. Explicabo voluptate, doloremque laudantium molestiae autem, quaerat deleniti nobis repellat, omnis vitae repudiandae officia nihil mollitia in fugit? Dolores, veniam.
+section#resume
+  h2 Experience
+  hr
+  ul.timeline
+    li.clearfix
+      .direction-r
+        p.duration 2010/09 - 2013/6
+        p.job-title 高中
+        p.company 私立智光商職
+        p.job-desc 電子系
+    li.clearfix
+      .direction-l
+        p.duration 2013/9 - 2017/6
+        p.job-title 大學
+        p.company 亞東技術學院
+        p.job-desc 電子工程系
+    li.clearfix
+      .direction-r
+        p.duration 2018/03 - 2018/12
+        p.job-title 測試開發工程師
+        p.company 亞旭電子
+        p.job-desc 軟硬體測試開發
+section#skill.clearfix
+  h2 Skill
+  hr
+  .skillBar.chart-container
+     canvas#bar
+  .knowledge
+    h4  Knowledge
+    p
+      i.fas.fa-check
+      span HTML
+    p
+      i.fas.fa-check
+      span CSS
+    p
+      i.fas.fa-check
+      span Js/Jquery
+    p
+      i.fas.fa-check
+      span Vue
+    p
+      i.fas.fa-check
+      span Bootstrap
+  .language
+    h4  Language
+    p Chinese
+    .degree
+      div.d1
+      div.d2
+      div.d3
+      div.d4
+    p English
+    .degree
+      div.d1
+      div.d2
+      div.d0
+      div.d0
+      
+  //- i.fas.fa-check
+section#work
+  .container
+      .row
+         .col-sm-12
+           h2 Works
+           hr
+      .row
+         .col-md-6.col-sm-12.work.big(data-href="https://codepen.io/mgnlhdsl/full/vqmQWY")
+            //- a(href="https://codepen.io/mgnlhdsl/full/vqmQWY" target="_blank")
+            img(src="https://upload.cc/i1/2019/07/07/gh92Qr.png", alt="")
+            .texts
+              h4.title Square Monster 
+              | JS setInterval/setTimeout
+         .col-md-6.col-sm-12.row
+            .col-md-6.col-sm-12.work(data-href="https://codepen.io/mgnlhdsl/full/RzZodY")
+              img(src="https://upload.cc/i1/2019/07/07/Fb1drC.png", alt="")
+              .texts
+                h4.title Jquery
+                | 事件觸發
+                //- p.content 事件觸發
+            .col-md-6.col-sm-12.work(data-href="https://codepen.io/mgnlhdsl/full/gyqpje")
+              img(src="https://upload.cc/i1/2019/07/07/rzePpl.png", alt="")
+              .texts
+                h4.title pug/sass
+                | Google品牌網頁視覺導引
+                //- p.content Google品牌網頁視覺導引
+            .col-md-6.col-sm-12.work(data-href="https://codepen.io/mgnlhdsl/full/yWjJvM")
+              img(src="https://upload.cc/i1/2019/07/07/LKUkZF.png", alt="")
+              .texts
+                h4.title Svg
+                | Weather Box
+                //- p.content Weather Box
+            .col-md-6.col-sm-12.work(data-href="https://codepen.io/mgnlhdsl/full/yWPJyE")
+              img(src="https://upload.cc/i1/2019/07/07/BQVzDn.png", alt="")
+              .texts
+                h4.title RWD
+                | fb帳號頁面桌面/手機版變化           
+section#contact
+  .container
+    .row
+      .col-md-6.col-sm-12
+        .mails
+          .mailcover
+            img(src="http://awiclass.monoame.com/img/webpic/w_mail_cover.svg", alt="mail")
+          .mailbody
+            h5 Dear Leo Lin
+            label Name
+            input(type="text").name
+            label Email
+            input(type="mail").mail
+            label Content
+            textarea.content
+            input(type="button" value="Send" id="SendMail")
+      .col-md-6.col-sm-12
+          h2 CONTACT
+          hr
+          br
+          p If you have any question about us,<br>Don`t hestitate to contact us !
+          br
+          br
+          p bjmqfg83@gmail.com<br>ADDRESS: TAIWAN, TAIPEI <br>Phone: +886-0976153432
+  .mailResult
+      h2 Great!
+      h2 意見已成功送出
+  .linemail
+     .lineinner
+footer#footer
+  a(href="#header")
+    i.fas.fa-angle-double-up
+  .social
+        a(href="https://www.facebook.com/profile.php?id=100002498349630" target="_blank").fb
+          i.fab.fa-facebook-f
+        a(href="https://www.instagram.com/bjmqfg83/?hl=zh-tw" target="_blank").ig
+          i.fab.fa-instagram
+        a(href="https://github.com/bjmqfg83" target="_blank").github
+          i.fab.fa-github
+  p ©2016 Leo Lin.All rights reserved.

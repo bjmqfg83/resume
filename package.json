@@ -1,0 +1,26 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "resumeProject",
+  "main": "resume.js",
+  "scripts": {
+    "test": "node ./resume/resume.js",
+    "start": "npm resume.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://resume.git"
+  },
+  "keywords": [
+    "resume",
+    "node"
+  ],
+  "author": "leo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}

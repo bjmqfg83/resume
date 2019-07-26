@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal resume version2</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald&amp;display=swap'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md navbar-light fixed-top border border-white bg-light">
+    <div class="container"><a class="navbar-brand" href="#header">HOME</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><i
+          class="fas fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item activew mr-2"><a class="nav-link" href="#about">About<span
+                class="sr-only">(current)</span></a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="#skill">Skill</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="#work">Work</a></li>
+          <li class="nav-item mr-2"><a class="nav-link" href="#contact">Contact </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="header">
+    <div class="container">
+      <h1>Hello! I'm Leo</h1>
+      <div class="social"><a class="fb" href="https://www.facebook.com/profile.php?id=100002498349630"
+          target="_blank"><i class="fab fa-facebook-f"></i></a><a class="ig"
+          href="https://www.instagram.com/bjmqfg83/?hl=zh-tw" target="_blank"><i class="fab fa-instagram"></i></a><a
+          class="github" href="https://github.com/bjmqfg83" target="_blank"><i class="fab fa-github"></i></a></div>
+      <div class="mousedown">
+        <div class="mouse d-none d-md-block">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <hr />
+    <div class="personal_msg container">
+      <div class="row">
+        <div class="carousel slide carousel-fade col-md-6 col-sm-12" id="avatar" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#avatar" data-slide-to="0">
+              <div></div>
+            </li>
+            <li data-target="#avatar" data-slide-to="1">
+              <div></div>
+            </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img class="d-block w-100"
+                src="https://upload.cc/i1/2019/07/10/FVzoSk.jpg" alt="mypic1" /></div>
+            <div class="carousel-item"><img class="d-block w-100" src="https://upload.cc/i1/2019/07/09/kOelLF.jpg"
+                alt="mypic2" /></div>
+          </div>
+        </div>
+        <div class="introduction col-md-6 col-sm-12">
+          <p>我是林禹勝 (Leo)，今年24歲，來自新北市。</p>
+          <p>畢業於亞東技術學院,之前在亞旭電子任職測試開發工程師,任職期間做過行動裝置間治具測試</p>
+          <p>在正式學習網頁前就有一直有在關注前端的技術發展,目前正在自學前端的開發技術</p>
+          <p>擅長於 HTML / CSS / Javascript / Jquery / Vue / Bootstrap / Node.js </p>
+          <p>目前已有的作品是個人簡易部落格,已完成前端功能:頁面滾動、自定義擴展屬性、圖片輪播、反饋轉場、漢堡選單,後端功能:資料庫連結、資料庫CRUD</p>
+          <P>所用技術Pug(Html) / Sass(Css) / Javascript / Jquery / Bootstrap / Nodejs / SQL</P>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="resume">
+    <h2>Experience</h2>
+    <hr />
+    <ul class="timeline">
+      <li class="clearfix">
+        <div class="direction-r">
+          <p class="duration">2010/09 - 2013/6</p>
+          <p class="job-title">高中</p>
+          <p class="company">私立智光商職</p>
+          <p class="job-desc">電子系</p>
+        </div>
+      </li>
+      <li class="clearfix">
+        <div class="direction-l">
+          <p class="duration">2013/9 - 2017/6</p>
+          <p class="job-title">大學</p>
+          <p class="company">亞東技術學院</p>
+          <p class="job-desc">電子工程系</p>
+        </div>
+      </li>
+      <li class="clearfix">
+        <div class="direction-r">
+          <p class="duration">2018/03 - 2018/12</p>
+          <p class="job-title">測試開發工程師</p>
+          <p class="company">亞旭電子</p>
+          <p class="job-desc">軟硬體測試開發</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="clearfix" id="skill">
+    <h2>Skill</h2>
+    <hr />
+    <div class="skillBar chart-container">
+      <canvas id="bar"></canvas>
+    </div>
+    <div class="knowledge">
+      <h4> Knowledge</h4>
+      <p><i class="fas fa-check"></i><span>HTML</span></p>
+      <p><i class="fas fa-check"></i><span>CSS</span></p>
+      <p><i class="fas fa-check"></i><span>Js/Jquery</span></p>
+      <p><i class="fas fa-check"></i><span>Vue</span></p>
+      <p><i class="fas fa-check"></i><span>Bootstrap</span></p>
+    </div>
+    <div class="language">
+      <h4> Language</h4>
+      <p>Chinese</p>
+      <div class="degree">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+      </div>
+      <p>English</p>
+      <div class="degree">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d0"></div>
+        <div class="d0"></div>
+      </div>
+    </div>
+  </section>
+  <section id="work">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Works</h2>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 work big" data-href="https://codepen.io/mgnlhdsl/full/vqmQWY"><img
+            src="https://upload.cc/i1/2019/07/07/gh92Qr.png" alt="" />
+          <div class="texts">
+            <h4 class="title">Square Monster </h4>JS setInterval/setTimeout
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 row">
+          <div class="col-md-6 col-sm-12 work" data-href="https://codepen.io/mgnlhdsl/full/RzZodY"><img
+              src="https://upload.cc/i1/2019/07/07/Fb1drC.png" alt="" />
+            <div class="texts">
+              <h4 class="title">Jquery</h4>事件觸發
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 work" data-href="https://codepen.io/mgnlhdsl/full/gyqpje"><img
+              src="https://upload.cc/i1/2019/07/07/rzePpl.png" alt="" />
+            <div class="texts">
+              <h4 class="title">pug/sass</h4>Google品牌網頁視覺導引
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 work" data-href="https://codepen.io/mgnlhdsl/full/yWjJvM"><img
+              src="https://upload.cc/i1/2019/07/07/LKUkZF.png" alt="" />
+            <div class="texts">
+              <h4 class="title">Svg</h4>Weather Box
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 work" data-href="https://codepen.io/mgnlhdsl/full/yWPJyE"><img
+              src="https://upload.cc/i1/2019/07/07/BQVzDn.png" alt="" />
+            <div class="texts">
+              <h4 class="title">RWD</h4>fb帳號頁面桌面/手機版變化
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="mails">
+            <div class="mailcover"><img src="http://awiclass.monoame.com/img/webpic/w_mail_cover.svg" alt="mail" />
+            </div>
+            <div class="mailbody">
+              <h5>Dear Leo Lin</h5>
+              <label>Name</label>
+              <input class="name" type="text" placeholder="3-16位中英文"/>
+              <label>Email</label>
+              <input class="mail" type="mail" placeholder="8-16位英數字"/>
+              <label>Content</label>
+              <textarea class="content" placeholder="不能為空"></textarea>
+              <input type="button" value="Send" id="SendMail" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>CONTACT</h2>
+          <hr /><br />
+          <p>If you have any question about me,<br>Don`t hestitate to contact me !</p><br /><br />
+          <p>bjmqfg83@gmail.com<br>ADDRESS: TAIWAN, TAIPEI <br>Phone: +886-0976153432</p>
+        </div>
+      </div>
+    </div>
+    <div class="mailResult">
+      <h2>Great!</h2>
+      <h2>意見已成功送出</h2>
+    </div>
+    <div class="linemail">
+      <div class="lineinner"></div>
+    </div>
+  </section>
+  <footer id="footer"><a href="#header"><i class="fas fa-angle-double-up"></i></a>
+    <div class="social"><a class="fb" href="https://www.facebook.com/profile.php?id=100002498349630" target="_blank"><i
+          class="fab fa-facebook-f"></i></a><a class="ig" href="https://www.instagram.com/bjmqfg83/?hl=zh-tw"
+        target="_blank"><i class="fab fa-instagram"></i></a><a class="github" href="https://github.com/bjmqfg83"
+        target="_blank"><i class="fab fa-github"></i></a></div>
+    <p>©2016 Leo Lin.All rights reserved.</p>
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
