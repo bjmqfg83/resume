@@ -177,7 +177,9 @@ section#about hr {
 }
 section#about p {
   font-size: 20px;
-  margin-top: 35px;
+  margin-top: 22px;
+  text-align: left;
+  letter-spacing: 2px
 }
 section#about .carousel-inner {
   width: 80%;
